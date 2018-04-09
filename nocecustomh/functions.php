@@ -169,4 +169,4 @@ function nocecustomh_css(){
   );
 }
 
-add_action('wp_header','nocecustomh_css');
+add_action('wp_enqueue_scripts','nocecustomh_css');
