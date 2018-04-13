@@ -193,14 +193,14 @@ add_action( 'wp_enqueue_scripts', 'nocecustomh_css');
 
 function nocecustomh_js() {
 	global $wp_scripts;
-	//wp_enqueue_script( 
-  //  'popper_js', 
- //   'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'
- // );
-  wp_enqueue_script( 
-    'bootstrap_js', 
-    'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'
-  );
+	wp_enqueue_script( 
+	'popper_js', 
+	'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'
+	);
+	wp_enqueue_script( 
+	'bootstrap_js', 
+	'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'
+	);
 	wp_enqueue_script( 'my_custom_js', get_template_directory_uri() . '/js/scripts.js');
 }
 add_action( 'wp_enqueue_scripts', 'nocecustomh_js');
