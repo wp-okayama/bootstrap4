@@ -205,3 +205,4 @@ function nocecustomh_js() {
 }
 add_action( 'wp_enqueue_scripts', 'nocecustomh_js');
 
+add_action('wp_enqueue_scripts','nocecustomh_css');
